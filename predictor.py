@@ -79,8 +79,8 @@ def funny_dog_breed_predictor(img_path):
     Parameter: img_path - image path of the input picture
     Return: (is_human, is_dog, breed)
     '''
-    #is_human = face_detector(img_path)
-    is_human = False
+    is_human = face_detector(img_path)
+    # is_human = False
     is_dog = dog_detector(img_path)
     if is_human or is_dog:
         breed = predict_dog_breed(img_path)
